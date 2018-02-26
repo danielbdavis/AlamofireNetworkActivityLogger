@@ -170,8 +170,7 @@ public class NetworkActivityLogger {
                  .info,
                  .warn,
                  .error:
-                print("[Error] \(httpMethod) '\(requestURL.absoluteString)' [\(String(format: "%.04f", elapsedTime)) s]:")
-                print(error)
+                print("[Error] \(httpMethod) '\(requestURL.absoluteString)' [\(String(format: "%.04f", elapsedTime)) s]: \(error.localizedDescription)")
             default:
                 break
             }
