@@ -120,8 +120,8 @@ public class NetworkActivityLogger {
         
         startDates[task] = Date()
         
-        logDivider()
-        
+//        logDivider()
+
         switch level {
         case .debug:
             print("\(httpMethod) '\(requestURL.absoluteString)':")
@@ -162,8 +162,8 @@ public class NetworkActivityLogger {
             startDates[task] = nil
         }
         
-        logDivider()
-        
+//        logDivider()
+
         if let error = task.error {
             switch level {
             case .debug,
